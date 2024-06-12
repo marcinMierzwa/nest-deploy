@@ -2,7 +2,21 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'My first Nest deployment is succesfull second time! :)';
+
+  users = [
+  {
+    id: 1,
+    name: 'user1',
+    age: 25
+  },
+  {
+    id: 2,
+    name: 'user2',
+    age: 35
+  },
+  ]
+  
+  getUsers() {
+    return this.users;
   }
 }
