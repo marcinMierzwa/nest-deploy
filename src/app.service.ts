@@ -14,6 +14,12 @@ export class AppService {
     name: 'user2',
     age: 35
   },
+  {
+    id: 3,
+    name: 'user3',
+    age: 45
+  },
+
   ]
   
   getUsers() {
